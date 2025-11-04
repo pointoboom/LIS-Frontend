@@ -111,3 +111,6 @@ It can also happen if the client has a browser extension installed which messes 
 [00:02:38.393] Browser LOG     6908cc6f5d2de4de0d4ddd03
 [00:02:38.393] Browser ERROR   uncaughtError: Error: Rendered more hooks than during the previous render.
 [00:04:11.825] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:26.257] Server  LOG      ✓ Compiled in 27ms
+[00:08:39.738] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:45.667] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
