@@ -65,7 +65,6 @@ export default function LoginPage() {
       <div className="w-full max-w-sm">
         <Card>
           <CardHeader>
-            <div className="mx-auto mb-2 h-10 w-10 rounded bg-zinc-900 dark:bg-zinc-100" />
             <CardTitle className="text-center">Sign in to LIS</CardTitle>
             <CardDescription className="text-center">Use your work email and password</CardDescription>
           </CardHeader>

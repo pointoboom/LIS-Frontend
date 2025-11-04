@@ -99,25 +99,16 @@ function DashboardLayout({ children }) {
                             className: "px-5 py-4",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "mb-6 flex items-center gap-2",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "h-7 w-7 rounded bg-zinc-900 dark:bg-zinc-100"
-                                        }, void 0, false, {
-                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                                            lineNumber: 18,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-sm font-semibold tracking-wide",
-                                            children: "LIS Dashboard"
-                                        }, void 0, false, {
-                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                                            lineNumber: 19,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                    className: "mb-6",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-sm font-semibold tracking-wide",
+                                        children: "LIS Dashboard"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
+                                        lineNumber: 18,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
                                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
                                     lineNumber: 17,
                                     columnNumber: 13
@@ -130,12 +121,12 @@ function DashboardLayout({ children }) {
                                         children: "Dashboard"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                                        lineNumber: 22,
+                                        lineNumber: 21,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                                    lineNumber: 21,
+                                    lineNumber: 20,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -168,14 +159,14 @@ function DashboardLayout({ children }) {
                                                             children: "Open menu"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                                                            lineNumber: 63,
+                                                            lineNumber: 62,
                                                             columnNumber: 19
                                                         }, this),
                                                         "☰"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                                                    lineNumber: 62,
+                                                    lineNumber: 61,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -183,13 +174,13 @@ function DashboardLayout({ children }) {
                                                     children: "Dashboard"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                                                    lineNumber: 65,
+                                                    lineNumber: 64,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                                            lineNumber: 61,
+                                            lineNumber: 60,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -202,7 +193,7 @@ function DashboardLayout({ children }) {
                                                             children: "⌘K"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                                                            lineNumber: 69,
+                                                            lineNumber: 68,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -210,13 +201,13 @@ function DashboardLayout({ children }) {
                                                             placeholder: "Search patients, orders..."
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                                                            lineNumber: 70,
+                                                            lineNumber: 69,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                                                    lineNumber: 68,
+                                                    lineNumber: 67,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -224,29 +215,29 @@ function DashboardLayout({ children }) {
                                                     children: "🔔"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                                                    lineNumber: 75,
+                                                    lineNumber: 74,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$app$2f$dashboard$2f$user$2d$menu$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                                                    lineNumber: 76,
+                                                    lineNumber: 75,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                                            lineNumber: 67,
+                                            lineNumber: 66,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 59,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                                lineNumber: 59,
+                                lineNumber: 58,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -254,13 +245,13 @@ function DashboardLayout({ children }) {
                                 children: children
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                                lineNumber: 82,
+                                lineNumber: 81,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/layout.tsx",
-                        lineNumber: 57,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this)
                 ]

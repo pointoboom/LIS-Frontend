@@ -166,3 +166,5 @@ It can also happen if the client has a browser extension installed which messes 
 [00:18:01.400] Server  LOG      ✓ Compiled in 8ms
 [00:18:01.514] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:18:14.299] Server  LOG      ✓ Compiled in 30ms
+[00:21:14.706] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:20.950] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

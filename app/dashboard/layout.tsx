@@ -14,8 +14,7 @@ export default function DashboardLayout({
         {/* Sidebar */}
         <aside className="dashboard-sidebar hidden md:block border-r border-zinc-200/70 dark:border-white/10 bg-white/80 dark:bg-zinc-900/50 backdrop-blur-sm">
           <div className="px-5 py-4">
-            <div className="mb-6 flex items-center gap-2">
-              <div className="h-7 w-7 rounded bg-zinc-900 dark:bg-zinc-100" />
+            <div className="mb-6">
               <span className="text-sm font-semibold tracking-wide">LIS Dashboard</span>
             </div>
             <nav className="space-y-1 text-sm">
