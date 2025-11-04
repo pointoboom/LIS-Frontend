@@ -1,6 +1,6 @@
 import Link from "next/link";
 import AuthGuard from "./auth-guard";
-import UserActions from "./user-actions";
+import UserMenu from "./user-menu";
 
 export default function DashboardLayout({
   children,
@@ -10,9 +10,9 @@ export default function DashboardLayout({
   return (
     <AuthGuard>
       <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-black dark:text-zinc-100">
-      <div className="grid min-h-screen grid-cols-1 md:grid-cols-[260px_1fr]">
+      <div className="dashboard-grid grid min-h-screen grid-cols-1 md:grid-cols-[260px_1fr]">
         {/* Sidebar */}
-        <aside className="hidden md:block border-r border-zinc-200/70 dark:border-white/10 bg-white/80 dark:bg-zinc-900/50 backdrop-blur-sm">
+        <aside className="dashboard-sidebar hidden md:block border-r border-zinc-200/70 dark:border-white/10 bg-white/80 dark:bg-zinc-900/50 backdrop-blur-sm">
           <div className="px-5 py-4">
             <div className="mb-6 flex items-center gap-2">
               <div className="h-7 w-7 rounded bg-zinc-900 dark:bg-zinc-100" />
@@ -56,7 +56,7 @@ export default function DashboardLayout({
         {/* Main column */}
         <div className="flex min-w-0 flex-col">
           {/* Topbar */}
-          <header className="sticky top-0 z-10 border-b border-zinc-200/70 bg-white/75 backdrop-blur dark:border-white/10 dark:bg-zinc-900/60">
+          <header className="dashboard-header sticky top-0 z-10 border-b border-zinc-200/70 bg-white/75 backdrop-blur dark:border-white/10 dark:bg-zinc-900/60">
             <div className="flex items-center justify-between gap-4 px-4 py-3 md:px-6">
               <div className="flex items-center gap-3">
                 <button className="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-200 dark:border-white/10">
@@ -73,10 +73,7 @@ export default function DashboardLayout({
                   />
                 </div>
                 <button className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-zinc-200 dark:border-white/10">🔔</button>
-                <div className="h-9 w-9 overflow-hidden rounded-full ring-1 ring-zinc-200 dark:ring-white/10">
-                  <div className="h-full w-full bg-gradient-to-br from-zinc-300 to-zinc-100 dark:from-zinc-700 dark:to-zinc-800" />
-                </div>
-                <UserActions />
+                <UserMenu />
               </div>
             </div>
           </header>

@@ -3,6 +3,9 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -60,87 +63,74 @@ export default function LoginPage() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 px-4 py-12 dark:bg-black">
       <div className="w-full max-w-sm">
-        <div className="mb-8 text-center">
-          <div className="mx-auto mb-3 h-10 w-10 rounded bg-zinc-900 dark:bg-zinc-100" />
-          <h1 className="text-lg font-semibold tracking-tight">Sign in to LIS</h1>
-          <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
-            Use your work email and password
-          </p>
-        </div>
+        <Card>
+          <CardHeader>
+            <div className="mx-auto mb-2 h-10 w-10 rounded bg-zinc-900 dark:bg-zinc-100" />
+            <CardTitle className="text-center">Sign in to LIS</CardTitle>
+            <CardDescription className="text-center">Use your work email and password</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <form onSubmit={onSubmit} className="space-y-4">
+            {error && (
+              <div className="rounded-md border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700 dark:border-rose-800/50 dark:bg-rose-950/30 dark:text-rose-300">
+                {error}
+              </div>
+            )}
 
-        <form
-          onSubmit={onSubmit}
-          className="space-y-4 rounded-xl border border-zinc-200 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-zinc-900"
-        >
-          {error && (
-            <div className="rounded-md border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700 dark:border-rose-800/50 dark:bg-rose-950/30 dark:text-rose-300">
-              {error}
-            </div>
-          )}
-
-          <div>
-            <label htmlFor="email" className="mb-1 block text-sm font-medium">
-              Email
-            </label>
-            <input
-              id="email"
-              type="email"
-              autoComplete="email"
-              className="w-full rounded-md border border-zinc-200 bg-white px-3 py-2 text-sm outline-none ring-0 placeholder:text-zinc-400 focus:border-zinc-400 dark:border-white/10 dark:bg-zinc-950"
-              placeholder="name@hospital.org"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-
-          <div>
-            <div className="mb-1 flex items-center justify-between">
-              <label htmlFor="password" className="text-sm font-medium">
-                Password
+            <div>
+              <label htmlFor="email" className="mb-1 block text-sm font-medium">
+                Email
               </label>
-              <button
-                type="button"
-                className="text-xs text-zinc-600 underline hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-200"
-                onClick={() => setShowPassword((s) => !s)}
-              >
-                {showPassword ? "Hide" : "Show"}
-              </button>
-            </div>
-            <div className="relative">
-              <input
-                id="password"
-                type={showPassword ? "text" : "password"}
-                autoComplete="current-password"
-                className="w-full rounded-md border border-zinc-200 bg-white px-3 py-2 pr-10 text-sm outline-none placeholder:text-zinc-400 focus:border-zinc-400 dark:border-white/10 dark:bg-zinc-950"
-                placeholder="••••••••"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+            <Input
+                id="email"
+                type="email"
+                autoComplete="email"
+                placeholder="name@hospital.org"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-          </div>
 
-          <div className="flex items-center justify-between">
-            <label className="flex items-center gap-2 text-sm">
-              <input type="checkbox" className="h-4 w-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-600 dark:border-zinc-600" />
-              Remember me
-            </label>
-            <Link href="#" className="text-sm text-zinc-700 underline hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-white">
-              Forgot password?
-            </Link>
-          </div>
+            <div>
+              <div className="mb-1 flex items-center justify-between">
+                <label htmlFor="password" className="text-sm font-medium">
+                  Password
+                </label>
+              <Button type="button" variant="link" className="h-auto p-0 text-xs" onClick={() => setShowPassword((s) => !s)}>
+                  {showPassword ? "Hide" : "Show"}
+                </Button>
+              </div>
+              <div className="relative">
+              <Input
+                  id="password"
+                  type={showPassword ? "text" : "password"}
+                  autoComplete="current-password"
+                  placeholder="••••••••"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </div>
+            </div>
 
-          <button
-            type="submit"
-            disabled={loading}
-            className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-zinc-900 px-3 py-2 text-sm font-medium text-white hover:bg-zinc-800 disabled:cursor-not-allowed disabled:opacity-60 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
-          >
-            {loading ? "Signing in…" : "Sign in"}
-          </button>
-        </form>
+            <div className="flex items-center justify-between">
+              <label className="flex items-center gap-2 text-sm">
+                <input type="checkbox" className="h-4 w-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-600 dark:border-zinc-600" />
+                Remember me
+              </label>
+              <Link href="#" className="text-sm text-zinc-700 underline hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-white">
+                Forgot password?
+              </Link>
+            </div>
 
-        <p className="mt-4 text-center text-sm text-zinc-600 dark:text-zinc-400">
-          Don’t have access? <Link href="#" className="underline">Request an account</Link>
-        </p>
+            <Button type="submit" disabled={loading} className="w-full">
+                {loading ? "Signing in…" : "Sign in"}
+              </Button>
+            </form>
+            <p className="mt-4 text-center text-sm text-zinc-600 dark:text-zinc-400">
+              Don’t have access? <Link href="#" className="underline">Request an account</Link>
+            </p>
+          </CardContent>
+        </Card>
       </div>
     </div>
   );
