@@ -188,6 +188,7 @@
     --font-weight-semibold: 600;
     --tracking-tight: -.025em;
     --tracking-wide: .025em;
+    --tracking-wider: .05em;
     --tracking-widest: .1em;
     --animate-pulse: pulse 2s cubic-bezier(.4, 0, .6, 1) infinite;
     --blur-sm: 8px;
@@ -1120,6 +1121,10 @@
     text-align: left;
   }
 
+  .text-right {
+    text-align: right;
+  }
+
   .align-middle {
     vertical-align: middle;
   }
@@ -1193,6 +1198,11 @@
     letter-spacing: var(--tracking-wide);
   }
 
+  .tracking-wider {
+    --tw-tracking: var(--tracking-wider);
+    letter-spacing: var(--tracking-wider);
+  }
+
   .tracking-widest {
     --tw-tracking: var(--tracking-widest);
     letter-spacing: var(--tracking-widest);
@@ -1244,6 +1254,10 @@
 
   .text-zinc-950 {
     color: var(--color-zinc-950);
+  }
+
+  .uppercase {
+    text-transform: uppercase;
   }
 
   .underline {
@@ -1616,6 +1630,10 @@
     .dark\:bg-rose-950\/30:is(.dark *) {
       background-color: color-mix(in oklab, var(--color-rose-950) 30%, transparent);
     }
+  }
+
+  .dark\:bg-white:is(.dark *) {
+    background-color: var(--color-white);
   }
 
   .dark\:bg-zinc-100:is(.dark *) {
