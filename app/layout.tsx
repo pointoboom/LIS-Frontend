@@ -16,7 +16,9 @@ export const metadata: Metadata = {
   title: "LIS Dashboard",
   description: "Laboratory Information System frontend",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
   },
   applicationName: "LIS",
 };

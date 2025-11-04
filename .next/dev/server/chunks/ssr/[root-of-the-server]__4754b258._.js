@@ -75,7 +75,12 @@ const metadata = {
     title: "LIS Dashboard",
     description: "Laboratory Information System frontend",
     icons: {
-        icon: "/favicon.ico"
+        icon: [
+            {
+                url: "/favicon.svg",
+                type: "image/svg+xml"
+            }
+        ]
     },
     applicationName: "LIS"
 };
@@ -87,12 +92,12 @@ function RootLayout({ children }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/layout.tsx",
-            lineNumber: 31,
+            lineNumber: 33,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/layout.tsx",
-        lineNumber: 30,
+        lineNumber: 32,
         columnNumber: 5
     }, this);
 }
