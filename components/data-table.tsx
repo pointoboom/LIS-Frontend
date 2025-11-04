@@ -67,7 +67,7 @@ export function DataTable<TData, TValue>({ columns, data, searchPlaceholder }: D
                           onClick={header.column.getToggleSortingHandler()}
                         >
                           {flexRender(header.column.columnDef.header, header.getContext())}
-                          <ArrowUpDown className="ml-2 h-3.5 w-3.5" />
+                          {/* <ArrowUpDown className="ml-2 h-3.5 w-3.5" /> */}
                         </Button>
                       )}
                     </TableHead>

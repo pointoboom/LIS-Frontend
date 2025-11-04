@@ -19,6 +19,7 @@ export const columns: ColumnDef<LabReport>[] = [
         </Link>
       );
     },
+    
   },
   // {
   //   accessorKey: "patient_id",
