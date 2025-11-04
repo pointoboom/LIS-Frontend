@@ -20,11 +20,11 @@ export const columns: ColumnDef<LabReport>[] = [
       );
     },
   },
-  {
-    accessorKey: "patient_id",
-    header: "patient_id",
-    cell: ({ row }) => <span className="text-zinc-500">{(row.getValue("patient_id") as string) || "—"}</span>,
-  },
+  // {
+  //   accessorKey: "patient_id",
+  //   header: "patient_id",
+  //   cell: ({ row }) => <span className="text-zinc-500">{(row.getValue("patient_id") as string) || "—"}</span>,
+  // },
   {
     accessorKey: "alias_patient",
     header: "alias_patient",

@@ -114,3 +114,8 @@ It can also happen if the client has a browser extension installed which messes 
 [00:08:26.257] Server  LOG      ✓ Compiled in 27ms
 [00:08:39.738] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:08:45.667] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:40.622] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:09:40.653] Server  LOG      ✓ Compiled in 3ms
+[00:13:34.529] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/columns.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:13:34.630] Server  LOG      ✓ Compiled in 12ms
+[00:13:34.759] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

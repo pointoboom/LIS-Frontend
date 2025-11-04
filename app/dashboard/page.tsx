@@ -47,7 +47,7 @@ export default async function DashboardPage() {
       {/* Content grid */}
       <section className="grid grid-cols-1 gap-4 lg:grid-cols-1">
         {/* Reports datatable (matches requested structure) */}
-        <Card className="overflow-hidden">
+        <Card className="overflow-hidden lg:col-span-2">
           <CardHeader className="p-4 pb-3">
             <CardTitle className="text-sm">Recent Reports</CardTitle>
           </CardHeader>
@@ -55,29 +55,29 @@ export default async function DashboardPage() {
             <DataTable columns={columns} data={reports} searchPlaceholder="Search reports..." />
           </CardContent>
         </Card>
-
-        {/* Activity */}
-        {/* <div className="overflow-hidden rounded-xl border border-zinc-200 bg-white dark:border-white/10 dark:bg-zinc-900">
-          <div className="border-b border-zinc-200 p-4 text-sm font-medium dark:border-white/10">
-            Activity
-          </div>
-          <ul className="divide-y divide-zinc-200 text-sm dark:divide-white/10">
-            {[
-              { who: "tech. ashton", what: "updated CBC for Jane Doe", when: "10m" },
-              { who: "dr. nash", what: "acknowledged critical result", when: "54m" },
-              { who: "sys", what: "auto-validated 42 results", when: "2h" },
-              { who: "tech. ramos", what: "received specimen LIS-10283", when: "3h" },
-            ].map((a, i) => (
-              <li key={i} className="flex items-start gap-3 px-4 py-3">
-                <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-zinc-300 dark:bg-zinc-600" />
-                <div className="flex-1">
-                  <div className="text-zinc-900 dark:text-zinc-100">{a.what}</div>
-                  <div className="text-xs text-zinc-500">{a.who} • {a.when} ago</div>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div> */}
+        {/* <Card>
+          <CardHeader className="p-4 pb-3">
+            <CardTitle className="text-sm">Activity</CardTitle>
+          </CardHeader>
+          <CardContent className="p-0">
+            <ul className="divide-y divide-zinc-200 text-sm dark:divide-zinc-800">
+              {[
+                { who: "tech. ashton", what: "updated CBC for Jane Doe", when: "10m" },
+                { who: "dr. nash", what: "acknowledged critical result", when: "54m" },
+                { who: "sys", what: "auto-validated 42 results", when: "2h" },
+                { who: "tech. ramos", what: "received specimen LIS-10283", when: "3h" },
+              ].map((a, i) => (
+                <li key={i} className="flex items-start gap-3 px-4 py-3">
+                  <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-zinc-300 dark:bg-zinc-600" />
+                  <div className="flex-1">
+                    <div className="text-zinc-900 dark:text-zinc-100">{a.what}</div>
+                    <div className="text-xs text-zinc-500">{a.who} • {a.when} ago</div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </CardContent>
+        </Card> */}
       </section>
     </div>
   );
