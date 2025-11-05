@@ -171,3 +171,233 @@ It can also happen if the client has a browser extension installed which messes 
 [00:22:33.402] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:24:04.135] Server  LOG      ✓ Compiled in 38ms
 [00:26:40.594] Server  LOG      ✓ Compiled in 508ms
+[00:00:53.637] Server  LOG        Reload env: .env.local
+[00:01:06.296] Server  LOG        Reload env: .env.local
+[00:01:13.053] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:37.271] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:53.650] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:53.754] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Desktop/B...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:11:49.269] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:25.507] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:25.612] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Desktop/B...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:12:36.797] Browser WARN    Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.
+Arguments: 
+[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: 2025-11-05 7:11:03.831Z, _f: undefined, _strict: undefined, _locale: [object Object]
+Error
+    at hooks.createFromInputFallback (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:17734:97)
+    at configFromString (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:20643:19)
+    at configFromInput (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:20972:13)
+    at prepareConfig (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:20958:13)
+    at createFromConfig (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:20930:44)
+    at createLocalOrUTC (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:21008:16)
+    at createLocal (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:21011:16)
+    at hooks (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:17509:29)
+    at cell (http://localhost:3000/_next/static/chunks/Desktop_Boom_LIS-Project_LIS-Frontend_f9a2eba8._.js:495:230)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:14746:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:4636:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:6091:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:6672:24)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:959:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:9487:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:9381:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:9365:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:8993:186)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:10155:9)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_328cb9f8._.js:2647:64)
+[00:14:07.141] Server  LOG      ✓ Compiled in 33ms
+[00:15:00.354] Server  LOG      ✓ Compiled in 26ms
+[00:15:58.612] Server  LOG      ✓ Compiled in 31ms
+[00:16:08.063] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:08.181] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Desktop/B...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:16:11.919] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:22.655] Browser WARN    Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.
+Arguments: 
+[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: 2025-11-05 7:11:03.831Z, _f: undefined, _strict: undefined, _locale: [object Object]
+Error
+    at hooks.createFromInputFallback (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:17734:97)
+    at configFromString (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:20643:19)
+    at configFromInput (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:20972:13)
+    at prepareConfig (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:20958:13)
+    at createFromConfig (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:20930:44)
+    at createLocalOrUTC (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:21008:16)
+    at createLocal (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:21011:16)
+    at hooks (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:17509:29)
+    at cell (http://localhost:3000/_next/static/chunks/Desktop_Boom_LIS-Project_LIS-Frontend_f9a2eba8._.js:495:230)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:14746:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:4636:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:6091:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:6672:24)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:959:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:9487:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:9381:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:9365:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:8993:186)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:10155:9)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_328cb9f8._.js:2647:64)
+[00:16:58.976] Server  LOG      ✓ Compiled in 17ms
+[00:18:51.120] Server  LOG      ✓ Compiled in 33ms
+[00:24:02.353] Server  LOG      ✓ Compiled in 37ms
+[00:24:17.682] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:17.791] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Desktop/B...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:24:20.316] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:31.333] Browser WARN    Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.
+Arguments: 
+[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: 2025-11-05 7:11:03.831Z, _f: undefined, _strict: undefined, _locale: [object Object]
+Error
+    at hooks.createFromInputFallback (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:17734:97)
+    at configFromString (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:20643:19)
+    at configFromInput (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:20972:13)
+    at prepareConfig (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:20958:13)
+    at createFromConfig (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:20930:44)
+    at createLocalOrUTC (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:21008:16)
+    at createLocal (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:21011:16)
+    at hooks (http://localhost:3000/_next/static/chunks/51cec_a6425708._.js:17509:29)
+    at cell (http://localhost:3000/_next/static/chunks/Desktop_Boom_LIS-Project_LIS-Frontend_f9a2eba8._.js:495:230)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:14746:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:4636:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:6091:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:6672:24)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:959:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:9487:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:9381:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:9365:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:8993:186)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_react-dom_052ce28d._.js:10155:9)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/_next/static/chunks/51cec_next_dist_compiled_328cb9f8._.js:2647:64)
+[00:24:44.456] Server  LOG      ✓ Compiled in 27ms

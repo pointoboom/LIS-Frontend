@@ -199,7 +199,7 @@ const dynamic = "force-dynamic";
 ;
 async function getReports() {
     try {
-        const res = await fetch("https://lisapi.entrywisesolutions.com/api/v1/lab-reports", {
+        const res = await fetch(`${("TURBOPACK compile-time value", "http://localhost:8080")}/api/v1/lab-reports`, {
             cache: "no-store"
         });
         if (!res.ok) throw new Error(`Failed: ${res.status}`);

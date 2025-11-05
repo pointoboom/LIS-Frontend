@@ -7,7 +7,7 @@ import { columns } from "./columns";
 async function getReports(): Promise<LabReport[]> {
   try {
     const res = await fetch(
-      "https://lisapi.entrywisesolutions.com/api/v1/lab-reports",
+      `${process.env.NEXT_PUBLIC_API_URL}/api/v1/lab-reports`,
       { cache: "no-store" }
     );
     if (!res.ok) throw new Error(`Failed: ${res.status}`);

@@ -49,7 +49,7 @@ export default function ReportPage() {
       setLoading(true);
       setError(null);
       try {
-        const res = await fetch(`https://lisapi.entrywisesolutions.com/api/v1/lab-reports/${id}`, { cache: "no-store" });
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/lab-reports/${id}`, { cache: "no-store" });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = (await res.json()) as ReportDetail;
         if (!cancelled) setReport(data);
@@ -64,6 +64,8 @@ export default function ReportPage() {
       cancelled = true;
     };
   }, [id]);
+
+  // (no manual refresh button in reverted design)
 
   if (loading) {
     return (
@@ -220,13 +222,11 @@ export default function ReportPage() {
                   const flag = obx?.abnormal_flags || "";
                   const status = obx?.status || "";
                   const isAbn = flag && flag !== "N";
-                  // Attachment detection (Base64 images/PDFs in OBX)
                   const strVal = String(value);
                   const hasBase64 = strVal.includes("Base64^");
                   let attachment: { kind: "image" | "pdf"; src: string } | null = null;
                   if (hasBase64) {
                     const base64 = strVal.split("Base64^").pop()?.trim() || "";
-                    // Detect PDF vs JPEG (JVBERi0 = %PDF, /9j/ = JPEG)
                     const mime = base64.startsWith("JVBERi0") || strVal.toLowerCase().includes("pdf")
                       ? "application/pdf"
                       : "image/jpeg";
