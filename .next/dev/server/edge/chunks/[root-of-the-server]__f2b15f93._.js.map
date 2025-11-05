@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/middleware.ts"],"sourcesContent":["import { NextResponse } from \"next/server\";\nimport type { NextRequest } from \"next/server\";\n\nexport function middleware(req: NextRequest) {\n  const { pathname } = req.nextUrl;\n\n  if (pathname === \"/\") {\n    const url = req.nextUrl.clone();\n    url.pathname = \"/login\";\n    return NextResponse.redirect(url);\n  }\n\n  return NextResponse.next();\n}\n\nexport const config = {\n  matcher: [\"/\"],\n};\n\n"],"names":[],"mappings":";;;;;;AAAA;AAAA;;AAGO,SAAS,WAAW,GAAgB;IACzC,MAAM,EAAE,QAAQ,EAAE,GAAG,IAAI,OAAO;IAEhC,IAAI,aAAa,KAAK;QACpB,MAAM,MAAM,IAAI,OAAO,CAAC,KAAK;QAC7B,IAAI,QAAQ,GAAG;QACf,OAAO,gMAAY,CAAC,QAAQ,CAAC;IAC/B;IAEA,OAAO,gMAAY,CAAC,IAAI;AAC1B;AAEO,MAAM,SAAS;IACpB,SAAS;QAAC;KAAI;AAChB"}}]
+}

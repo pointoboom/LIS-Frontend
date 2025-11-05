@@ -3,13 +3,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DataTable } from "@/components/data-table";
 import type { LabReport } from "@/types/lab-report";
 import { columns } from "./columns";
+import { apiBase } from "@/lib/api";
 
 async function getReports(): Promise<LabReport[]> {
   try {
-    const res = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/api/v1/lab-reports`,
-      { cache: "no-store" }
-    );
+    const res = await fetch(`${apiBase()}/api/v1/lab-reports`, { cache: "no-store" });
     if (!res.ok) throw new Error(`Failed: ${res.status}`);
     const data = (await res.json()) as LabReport[];
     if (!Array.isArray(data)) throw new Error("Invalid response shape");

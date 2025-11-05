@@ -10,6 +10,7 @@ import ExportJpgButton from "../export-jpg-button";
 import ExportPngButton from "../export-png-button";
 import ExportPdfButton from "../export-pdf-button";
 import { useParams } from "next/navigation";
+import { apiBase } from "@/lib/api";
 
 type ReportDetail = {
   _id?: { $oid: string } | string;
@@ -49,7 +50,7 @@ export default function ReportPage() {
       setLoading(true);
       setError(null);
       try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/lab-reports/${id}`, { cache: "no-store" });
+        const res = await fetch(`${apiBase()}/api/v1/lab-reports/${id}`, { cache: "no-store" });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = (await res.json()) as ReportDetail;
         if (!cancelled) setReport(data);
