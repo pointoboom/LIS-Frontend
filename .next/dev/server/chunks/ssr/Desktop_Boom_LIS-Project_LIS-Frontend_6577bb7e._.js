@@ -236,7 +236,7 @@ function ReportPage() {
             setLoading(true);
             setError(null);
             try {
-                const res = await fetch(`https://lisapi.entrywisesolutions.com/api/v1/lab-reports/${id}`, {
+                const res = await fetch(`${("TURBOPACK compile-time value", "http://localhost:8080")}/api/v1/lab-reports/${id}`, {
                     cache: "no-store"
                 });
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -255,6 +255,7 @@ function ReportPage() {
     }, [
         id
     ]);
+    // (no manual refresh button in reverted design)
     if (loading) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "space-y-4",
@@ -271,7 +272,7 @@ function ReportPage() {
                                     children: "Dashboard"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                    lineNumber: 70,
+                                    lineNumber: 75,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -279,33 +280,33 @@ function ReportPage() {
                                     children: "/"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                    lineNumber: 71,
+                                    lineNumber: 76,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     children: "Report"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                    lineNumber: 72,
+                                    lineNumber: 77,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                            lineNumber: 69,
+                            lineNumber: 74,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "h-8 w-20 animate-pulse rounded bg-zinc-200 dark:bg-zinc-800"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                            lineNumber: 74,
+                            lineNumber: 79,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                    lineNumber: 68,
+                    lineNumber: 73,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -315,7 +316,7 @@ function ReportPage() {
                             className: "mb-3 h-5 w-64 animate-pulse rounded bg-zinc-200 dark:bg-zinc-800"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                            lineNumber: 77,
+                            lineNumber: 82,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -329,31 +330,31 @@ function ReportPage() {
                                             className: "h-3 w-24 animate-pulse rounded bg-zinc-200 dark:bg-zinc-800"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                            lineNumber: 81,
+                                            lineNumber: 86,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "h-4 w-40 animate-pulse rounded bg-zinc-200 dark:bg-zinc-800"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                            lineNumber: 82,
+                                            lineNumber: 87,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, i, true, {
                                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                    lineNumber: 80,
+                                    lineNumber: 85,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                            lineNumber: 78,
+                            lineNumber: 83,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                    lineNumber: 76,
+                    lineNumber: 81,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -363,26 +364,26 @@ function ReportPage() {
                             className: "mb-3 h-5 w-40 animate-pulse rounded bg-zinc-200 dark:bg-zinc-800"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                            lineNumber: 88,
+                            lineNumber: 93,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "h-40 w-full animate-pulse rounded bg-zinc-200 dark:bg-zinc-800"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                            lineNumber: 89,
+                            lineNumber: 94,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                    lineNumber: 87,
+                    lineNumber: 92,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-            lineNumber: 67,
+            lineNumber: 72,
             columnNumber: 7
         }, this);
     }
@@ -402,7 +403,7 @@ function ReportPage() {
                                     children: "Dashboard"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                    lineNumber: 99,
+                                    lineNumber: 104,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -410,20 +411,20 @@ function ReportPage() {
                                     children: "/"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                    lineNumber: 100,
+                                    lineNumber: 105,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     children: "Report"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                    lineNumber: 101,
+                                    lineNumber: 106,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                            lineNumber: 98,
+                            lineNumber: 103,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -435,18 +436,18 @@ function ReportPage() {
                                 children: "Back"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                lineNumber: 104,
+                                lineNumber: 109,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                            lineNumber: 103,
+                            lineNumber: 108,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                    lineNumber: 97,
+                    lineNumber: 102,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -458,12 +459,12 @@ function ReportPage() {
                                 children: "Report not found"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                lineNumber: 109,
+                                lineNumber: 114,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                            lineNumber: 108,
+                            lineNumber: 113,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -471,25 +472,204 @@ function ReportPage() {
                             children: error ? `Error: ${error}` : "Could not load report details. Please try again later."
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                            lineNumber: 111,
+                            lineNumber: 116,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                    lineNumber: 107,
+                    lineNumber: 112,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-            lineNumber: 96,
+            lineNumber: 101,
             columnNumber: 7
         }, this);
     }
     const patient = report?.pid ?? {};
     const order = report?.orders?.[0]?.obr ?? {};
     const observations = report?.orders?.[0]?.observations ?? [];
+    // Derive MAP summary (MAP_Main and MAP Part 1..10) displayed as a single row
+    const mapKeys = [
+        "Main",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+    ];
+    const mapParts = {};
+    // Derive COD summary (COD_Main and COD Part 1..10) displayed as a single row
+    const codKeys = [
+        "Main",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+    ];
+    const codParts = {};
+    // Derive FAT summary (FAT_Main and FAT Part 1..10) displayed as a single row
+    const fatKeys = [
+        "Main",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+    ];
+    const fatParts = {};
+    // Derive BAC summary (BAC_Main and BAC Part 1..10) displayed as a single row
+    const bacKeys = [
+        "Main",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+    ];
+    const bacParts = {};
+    // Derive RBC summary (RBC_Main and RBC Part 1..10) displayed as a single row
+    const rbcKeys = [
+        "Main",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+    ];
+    const rbcParts = {};
+    // Derive WBC summary (WBC_Main and WBC Part 1..10) displayed as a single row
+    const wbcKeys = [
+        "Main",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+    ];
+    const wbcParts = {};
+    const otherObservations = [];
+    for (const obx of observations){
+        const raw = (obx?.id?.text || obx?.id?.id || "").toUpperCase();
+        if (raw.includes("MAP")) {
+            if (raw.includes("MAIN")) {
+                if (!mapParts.Main) mapParts.Main = obx;
+                continue;
+            }
+            const m = raw.match(/PART[^0-9]*([0-9]{1,2})/i);
+            const n = m ? parseInt(m[1], 10) : NaN;
+            if (Number.isFinite(n) && n >= 1 && n <= 10) {
+                const key = String(n);
+                if (!mapParts[key]) mapParts[key] = obx;
+                continue;
+            }
+        }
+        if (raw.includes("COD")) {
+            if (raw.includes("MAIN")) {
+                if (!codParts.Main) codParts.Main = obx;
+                continue;
+            }
+            const m2 = raw.match(/PART[^0-9]*([0-9]{1,2})/i);
+            const n2 = m2 ? parseInt(m2[1], 10) : NaN;
+            if (Number.isFinite(n2) && n2 >= 1 && n2 <= 10) {
+                const key2 = String(n2);
+                if (!codParts[key2]) codParts[key2] = obx;
+                continue;
+            }
+        }
+        if (raw.includes("RBC")) {
+            if (raw.includes("MAIN")) {
+                if (!rbcParts.Main) rbcParts.Main = obx;
+                continue;
+            }
+            const mr = raw.match(/PART[^0-9]*([0-9]{1,2})/i);
+            const nr = mr ? parseInt(mr[1], 10) : NaN;
+            if (Number.isFinite(nr) && nr >= 1 && nr <= 10) {
+                const keyr = String(nr);
+                if (!rbcParts[keyr]) rbcParts[keyr] = obx;
+                continue;
+            }
+        }
+        if (raw.includes("WBC")) {
+            if (raw.includes("MAIN")) {
+                if (!wbcParts.Main) wbcParts.Main = obx;
+                continue;
+            }
+            const mw = raw.match(/PART[^0-9]*([0-9]{1,2})/i);
+            const nw = mw ? parseInt(mw[1], 10) : NaN;
+            if (Number.isFinite(nw) && nw >= 1 && nw <= 10) {
+                const keyw = String(nw);
+                if (!wbcParts[keyw]) wbcParts[keyw] = obx;
+                continue;
+            }
+        }
+        if (raw.includes("FAT")) {
+            if (raw.includes("MAIN")) {
+                if (!fatParts.Main) fatParts.Main = obx;
+                continue;
+            }
+            const mf = raw.match(/PART[^0-9]*([0-9]{1,2})/i);
+            const nf = mf ? parseInt(mf[1], 10) : NaN;
+            if (Number.isFinite(nf) && nf >= 1 && nf <= 10) {
+                const keyf = String(nf);
+                if (!fatParts[keyf]) fatParts[keyf] = obx;
+                continue;
+            }
+        }
+        if (raw.includes("BAC")) {
+            if (raw.includes("MAIN")) {
+                if (!bacParts.Main) bacParts.Main = obx;
+                continue;
+            }
+            const mb = raw.match(/PART[^0-9]*([0-9]{1,2})/i);
+            const nb = mb ? parseInt(mb[1], 10) : NaN;
+            if (Number.isFinite(nb) && nb >= 1 && nb <= 10) {
+                const keyb = String(nb);
+                if (!bacParts[keyb]) bacParts[keyb] = obx;
+                continue;
+            }
+        }
+        otherObservations.push(obx);
+    }
+    const hasMapSummary = Object.keys(mapParts).length > 0;
+    const hasCodSummary = Object.keys(codParts).length > 0;
+    const hasRbcSummary = Object.keys(rbcParts).length > 0;
+    const hasWbcSummary = Object.keys(wbcParts).length > 0;
+    const hasFatSummary = Object.keys(fatParts).length > 0;
+    const hasBacSummary = Object.keys(bacParts).length > 0;
     const receivedAt = (()=>{
         const receivedRaw = report?.received_at;
         if (typeof receivedRaw === "string") return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$moment$2f$moment$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(receivedRaw).format("DD MMMM YYYY");
@@ -501,461 +681,1342 @@ function ReportPage() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-center justify-between",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "text-sm text-zinc-500",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/dashboard",
-                                className: "underline underline-offset-2",
-                                children: "Dashboard"
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex items-center gap-2 print:hidden",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$app$2f$dashboard$2f$reports$2f$print$2d$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                            lineNumber: 259,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            href: "/dashboard",
+                            passHref: true,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                variant: "outline",
+                                size: "sm",
+                                children: "Back"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                lineNumber: 133,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "mx-2",
-                                children: "/"
-                            }, void 0, false, {
-                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                lineNumber: 134,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                children: "Report"
-                            }, void 0, false, {
-                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                lineNumber: 135,
-                                columnNumber: 11
+                                lineNumber: 261,
+                                columnNumber: 13
                             }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                        lineNumber: 132,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center gap-2 print:hidden",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$app$2f$dashboard$2f$reports$2f$print$2d$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                lineNumber: 138,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/dashboard",
-                                passHref: true,
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                    variant: "outline",
-                                    size: "sm",
-                                    children: "Back"
-                                }, void 0, false, {
-                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                    lineNumber: 140,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                lineNumber: 139,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                        lineNumber: 137,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
+                        }, void 0, false, {
+                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                            lineNumber: 260,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                    lineNumber: 255,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                lineNumber: 131,
+                lineNumber: 249,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                id: "report-export",
+                className: "space-y-4",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
-                        className: "p-4 pb-3",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
-                            className: "text-base",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "rounded-xl border border-zinc-200 bg-white p-4 text-sm dark:border-zinc-800 dark:bg-white",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center justify-between",
                             children: [
-                                order?.service?.id || "Service",
-                                " • ",
-                                order?.service?.text || "Report"
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-xs uppercase tracking-wider text-zinc-500",
+                                            children: "Laboratory Information System"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                            lineNumber: 271,
+                                            columnNumber: 13
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-base font-semibold text-zinc-900",
+                                            children: "Laboratory Report"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                            lineNumber: 272,
+                                            columnNumber: 13
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                    lineNumber: 270,
+                                    columnNumber: 11
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-right text-xs text-zinc-600",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                "Report ID: ",
+                                                String(id)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                            lineNumber: 275,
+                                            columnNumber: 13
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                "Generated: ",
+                                                (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$moment$2f$moment$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])().format("DD MMMM YYYY")
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                            lineNumber: 276,
+                                            columnNumber: 13
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                    lineNumber: 274,
+                                    columnNumber: 11
+                                }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                            lineNumber: 147,
-                            columnNumber: 11
+                            lineNumber: 269,
+                            columnNumber: 9
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                        lineNumber: 146,
-                        columnNumber: 9
+                        lineNumber: 268,
+                        columnNumber: 7
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
-                        className: "grid gap-3 p-4 text-sm sm:grid-cols-2",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-zinc-500",
-                                        children: "Alias Patient"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                        lineNumber: 153,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "font-medium",
-                                        children: patient?.alias_patient || "—"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                        lineNumber: 154,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                className: "p-4 pb-3",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                    className: "text-base",
+                                    children: [
+                                        order?.service?.id || "Service",
+                                        " • ",
+                                        order?.service?.text || "Report"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                    lineNumber: 282,
+                                    columnNumber: 11
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                lineNumber: 152,
-                                columnNumber: 11
+                                lineNumber: 281,
+                                columnNumber: 9
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
+                                className: "grid gap-3 p-4 text-sm sm:grid-cols-2",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-zinc-500",
-                                        children: "Patient ID"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                        lineNumber: 157,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "font-medium",
-                                        children: patient?.patient_id || "—"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                        lineNumber: 158,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                lineNumber: 156,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-zinc-500",
-                                        children: "Filler Order"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                        lineNumber: 161,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "font-medium",
-                                        children: order?.filler_order || "—"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                        lineNumber: 162,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                lineNumber: 160,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-zinc-500",
-                                        children: "Received At"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                        lineNumber: 165,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "font-medium",
-                                        children: receivedAt || "—"
-                                    }, void 0, false, {
-                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                        lineNumber: 166,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                lineNumber: 164,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                        lineNumber: 151,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                lineNumber: 145,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                className: "overflow-hidden",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
-                        className: "p-4 pb-3",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
-                            className: "text-sm",
-                            children: "Observations"
-                        }, void 0, false, {
-                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                            lineNumber: 173,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                        lineNumber: 172,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
-                        className: "p-0",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Table"], {
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHeader"], {
-                                    className: "bg-zinc-50 dark:bg-zinc-950",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
-                                        className: "hover:bg-transparent",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
-                                                children: "Code"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "text-zinc-500",
+                                                children: "Alias Patient"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                lineNumber: 179,
-                                                columnNumber: 17
+                                                lineNumber: 288,
+                                                columnNumber: 13
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
-                                                children: "Name"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "font-medium",
+                                                children: patient?.alias_patient || "—"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                lineNumber: 180,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
-                                                children: "Value"
-                                            }, void 0, false, {
-                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                lineNumber: 181,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
-                                                children: "Units"
-                                            }, void 0, false, {
-                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                lineNumber: 182,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
-                                                children: "Ref Range"
-                                            }, void 0, false, {
-                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                lineNumber: 183,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
-                                                children: "Flag"
-                                            }, void 0, false, {
-                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                lineNumber: 184,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
-                                                children: "Status"
-                                            }, void 0, false, {
-                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                lineNumber: 185,
-                                                columnNumber: 17
+                                                lineNumber: 289,
+                                                columnNumber: 13
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                        lineNumber: 178,
-                                        columnNumber: 15
+                                        lineNumber: 287,
+                                        columnNumber: 11
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "text-zinc-500",
+                                                children: "Patient ID"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 292,
+                                                columnNumber: 13
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "font-medium",
+                                                children: patient?.patient_id || "—"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 293,
+                                                columnNumber: 13
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                        lineNumber: 291,
+                                        columnNumber: 11
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "text-zinc-500",
+                                                children: "Filler Order"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 296,
+                                                columnNumber: 13
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "font-medium",
+                                                children: order?.filler_order || "—"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 297,
+                                                columnNumber: 13
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                        lineNumber: 295,
+                                        columnNumber: 11
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "text-zinc-500",
+                                                children: "Received At"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 300,
+                                                columnNumber: 13
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "font-medium",
+                                                children: receivedAt || "—"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 301,
+                                                columnNumber: 13
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                        lineNumber: 299,
+                                        columnNumber: 11
                                     }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                lineNumber: 286,
+                                columnNumber: 9
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                        lineNumber: 280,
+                        columnNumber: 7
+                    }, this),
+                    hasMapSummary && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
+                        className: "overflow-hidden",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                className: "p-4 pb-3",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                    className: "text-sm",
+                                    children: "MAP Summary"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                    lineNumber: 177,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableBody"], {
-                                    children: observations.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
-                                            colSpan: 7,
-                                            className: "text-center text-zinc-500",
-                                            children: "No observations"
+                                    lineNumber: 309,
+                                    columnNumber: 11
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                lineNumber: 308,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
+                                className: "p-0",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Table"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHeader"], {
+                                            className: "bg-zinc-50 dark:bg-zinc-950",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                className: "hover:bg-transparent",
+                                                children: mapKeys.map((k)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        children: k === "Main" ? "MAP Main" : `Part ${k}`
+                                                    }, `h-${k}`, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 316,
+                                                        columnNumber: 21
+                                                    }, this))
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 314,
+                                                columnNumber: 17
+                                            }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                            lineNumber: 191,
-                                            columnNumber: 19
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                        lineNumber: 190,
-                                        columnNumber: 17
-                                    }, this) : observations.map((obx, i)=>{
-                                        const code = obx?.id?.id || "";
-                                        const name = obx?.id?.text || "";
-                                        const value = obx?.value ?? "";
-                                        const units = obx?.units?.id || obx?.units?.text || "";
-                                        const ref = obx?.ref_range || "";
-                                        const flag = obx?.abnormal_flags || "";
-                                        const status = obx?.status || "";
-                                        const isAbn = flag && flag !== "N";
-                                        // Attachment detection (Base64 images/PDFs in OBX)
-                                        const strVal = String(value);
-                                        const hasBase64 = strVal.includes("Base64^");
-                                        let attachment = null;
-                                        if (hasBase64) {
-                                            const base64 = strVal.split("Base64^").pop()?.trim() || "";
-                                            // Detect PDF vs JPEG (JVBERi0 = %PDF, /9j/ = JPEG)
-                                            const mime = base64.startsWith("JVBERi0") || strVal.toLowerCase().includes("pdf") ? "application/pdf" : "image/jpeg";
-                                            const uri = `data:${mime};base64,${base64}`;
-                                            attachment = mime === "application/pdf" ? {
-                                                kind: "pdf",
-                                                src: uri
-                                            } : {
-                                                kind: "image",
-                                                src: uri
-                                            };
-                                        }
-                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
-                                                    className: "font-medium",
-                                                    children: code
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                    lineNumber: 218,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
-                                                    children: name
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                    lineNumber: 219,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
-                                                    className: isAbn ? "text-rose-600" : undefined,
-                                                    children: attachment ? attachment.kind === "image" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: attachment.src,
-                                                        target: "_blank",
-                                                        rel: "noreferrer",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: attachment.src,
-                                                            alt: name || code || "attachment",
-                                                            className: "h-16 w-16 rounded object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                                            lineNumber: 313,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableBody"], {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                children: mapKeys.map((k)=>{
+                                                    const obx = mapParts[k];
+                                                    const value = obx?.value ?? "—";
+                                                    const units = obx?.units?.id || obx?.units?.text || "";
+                                                    const strVal = String(value);
+                                                    const hasBase64 = strVal.includes("Base64^");
+                                                    let attachment = null;
+                                                    if (hasBase64) {
+                                                        const base64 = strVal.split("Base64^").pop()?.trim() || "";
+                                                        const mime = base64.startsWith("JVBERi0") || strVal.toLowerCase().includes("pdf") ? "application/pdf" : "image/jpeg";
+                                                        const uri = `data:${mime};base64,${base64}`;
+                                                        attachment = mime === "application/pdf" ? {
+                                                            kind: "pdf",
+                                                            src: uri
+                                                        } : {
+                                                            kind: "image",
+                                                            src: uri
+                                                        };
+                                                    }
+                                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                        children: attachment ? attachment.kind === "image" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                            href: attachment.src,
+                                                            target: "_blank",
+                                                            rel: "noreferrer",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                                src: attachment.src,
+                                                                alt: obx?.id?.text || obx?.id?.id || `MAP ${k}`,
+                                                                className: "h-20 w-20 rounded object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                                lineNumber: 342,
+                                                                columnNumber: 31
+                                                            }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                            lineNumber: 224,
-                                                            columnNumber: 31
-                                                        }, this)
-                                                    }, void 0, false, {
+                                                            lineNumber: 341,
+                                                            columnNumber: 29
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                            href: attachment.src,
+                                                            target: "_blank",
+                                                            rel: "noreferrer",
+                                                            className: "underline underline-offset-2",
+                                                            children: "Open PDF"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 349,
+                                                            columnNumber: 29
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                            children: [
+                                                                value,
+                                                                units ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "ml-1 text-xs text-zinc-500",
+                                                                    children: units
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                                    lineNumber: 354,
+                                                                    columnNumber: 38
+                                                                }, this) : null
+                                                            ]
+                                                        }, void 0, true)
+                                                    }, `c-${k}`, false, {
                                                         fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                        lineNumber: 223,
-                                                        columnNumber: 29
-                                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: attachment.src,
-                                                        target: "_blank",
-                                                        rel: "noreferrer",
-                                                        className: "underline underline-offset-2",
-                                                        children: "Open PDF"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                        lineNumber: 227,
-                                                        columnNumber: 29
-                                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                                                        children: value
-                                                    }, void 0, false)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                    lineNumber: 220,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
-                                                    children: units
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                    lineNumber: 233,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
-                                                    className: "text-zinc-500",
-                                                    children: ref
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                    lineNumber: 234,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
-                                                    children: flag ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: isAbn ? "rounded-full bg-rose-100 px-2 py-0.5 text-xs text-rose-700 dark:bg-rose-900/30 dark:text-rose-300" : "rounded-full bg-zinc-100 px-2 py-0.5 text-xs text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300",
-                                                        children: flag
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                        lineNumber: 237,
-                                                        columnNumber: 27
-                                                    }, this) : "—"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                    lineNumber: 235,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
-                                                    className: "text-zinc-500",
-                                                    children: status
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                                    lineNumber: 244,
-                                                    columnNumber: 23
-                                                }, this)
-                                            ]
-                                        }, `${code}-${i}`, true, {
+                                                        lineNumber: 338,
+                                                        columnNumber: 23
+                                                    }, this);
+                                                })
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 321,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
                                             fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                            lineNumber: 217,
-                                            columnNumber: 21
-                                        }, this);
-                                    })
-                                }, void 0, false, {
+                                            lineNumber: 320,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                                    lineNumber: 188,
+                                    lineNumber: 312,
                                     columnNumber: 13
                                 }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                            lineNumber: 176,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                lineNumber: 311,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                        lineNumber: 175,
+                        lineNumber: 307,
                         columnNumber: 9
+                    }, this),
+                    hasRbcSummary && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
+                        className: "overflow-hidden",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                className: "p-4 pb-3",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                    className: "text-sm",
+                                    children: "RBC Summary"
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                    lineNumber: 370,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                lineNumber: 369,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
+                                className: "p-0",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Table"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHeader"], {
+                                            className: "bg-zinc-50 dark:bg-zinc-950",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                className: "hover:bg-transparent",
+                                                children: rbcKeys.map((k)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        children: k === "Main" ? "RBC Main" : `Part ${k}`
+                                                    }, `rbch-${k}`, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 377,
+                                                        columnNumber: 21
+                                                    }, this))
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 375,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                            lineNumber: 374,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableBody"], {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                children: rbcKeys.map((k)=>{
+                                                    const obx = rbcParts[k];
+                                                    const value = obx?.value ?? "—";
+                                                    const units = obx?.units?.id || obx?.units?.text || "";
+                                                    const strVal = String(value);
+                                                    const hasBase64 = strVal.includes("Base64^");
+                                                    let attachment = null;
+                                                    if (hasBase64) {
+                                                        const base64 = strVal.split("Base64^").pop()?.trim() || "";
+                                                        const mime = base64.startsWith("JVBERi0") || strVal.toLowerCase().includes("pdf") ? "application/pdf" : "image/jpeg";
+                                                        const uri = `data:${mime};base64,${base64}`;
+                                                        attachment = mime === "application/pdf" ? {
+                                                            kind: "pdf",
+                                                            src: uri
+                                                        } : {
+                                                            kind: "image",
+                                                            src: uri
+                                                        };
+                                                    }
+                                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                        children: attachment ? attachment.kind === "image" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                            href: attachment.src,
+                                                            target: "_blank",
+                                                            rel: "noreferrer",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                                src: attachment.src,
+                                                                alt: obx?.id?.text || obx?.id?.id || `RBC ${k}`,
+                                                                className: "h-16 w-16 rounded object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                                lineNumber: 403,
+                                                                columnNumber: 31
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 402,
+                                                            columnNumber: 29
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                            href: attachment.src,
+                                                            target: "_blank",
+                                                            rel: "noreferrer",
+                                                            className: "underline underline-offset-2",
+                                                            children: "Open PDF"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 410,
+                                                            columnNumber: 29
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                            children: [
+                                                                value,
+                                                                units ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "ml-1 text-xs text-zinc-500",
+                                                                    children: units
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                                    lineNumber: 415,
+                                                                    columnNumber: 38
+                                                                }, this) : null
+                                                            ]
+                                                        }, void 0, true)
+                                                    }, `rbcc-${k}`, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 399,
+                                                        columnNumber: 23
+                                                    }, this);
+                                                })
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 382,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                            lineNumber: 381,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                    lineNumber: 373,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                lineNumber: 372,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                        lineNumber: 368,
+                        columnNumber: 9
+                    }, this),
+                    hasWbcSummary && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
+                        className: "overflow-hidden",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                className: "p-4 pb-3",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                    className: "text-sm",
+                                    children: "WBC Summary"
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                    lineNumber: 431,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                lineNumber: 430,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
+                                className: "p-0",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Table"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHeader"], {
+                                            className: "bg-zinc-50 dark:bg-zinc-950",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                className: "hover:bg-transparent",
+                                                children: wbcKeys.map((k)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        children: k === "Main" ? "WBC Main" : `Part ${k}`
+                                                    }, `wbch-${k}`, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 438,
+                                                        columnNumber: 21
+                                                    }, this))
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 436,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                            lineNumber: 435,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableBody"], {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                children: wbcKeys.map((k)=>{
+                                                    const obx = wbcParts[k];
+                                                    const value = obx?.value ?? "—";
+                                                    const units = obx?.units?.id || obx?.units?.text || "";
+                                                    const strVal = String(value);
+                                                    const hasBase64 = strVal.includes("Base64^");
+                                                    let attachment = null;
+                                                    if (hasBase64) {
+                                                        const base64 = strVal.split("Base64^").pop()?.trim() || "";
+                                                        const mime = base64.startsWith("JVBERi0") || strVal.toLowerCase().includes("pdf") ? "application/pdf" : "image/jpeg";
+                                                        const uri = `data:${mime};base64,${base64}`;
+                                                        attachment = mime === "application/pdf" ? {
+                                                            kind: "pdf",
+                                                            src: uri
+                                                        } : {
+                                                            kind: "image",
+                                                            src: uri
+                                                        };
+                                                    }
+                                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                        children: attachment ? attachment.kind === "image" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                            href: attachment.src,
+                                                            target: "_blank",
+                                                            rel: "noreferrer",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                                src: attachment.src,
+                                                                alt: obx?.id?.text || obx?.id?.id || `WBC ${k}`,
+                                                                className: "h-16 w-16 rounded object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                                lineNumber: 464,
+                                                                columnNumber: 31
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 463,
+                                                            columnNumber: 29
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                            href: attachment.src,
+                                                            target: "_blank",
+                                                            rel: "noreferrer",
+                                                            className: "underline underline-offset-2",
+                                                            children: "Open PDF"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 471,
+                                                            columnNumber: 29
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                            children: [
+                                                                value,
+                                                                units ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "ml-1 text-xs text-zinc-500",
+                                                                    children: units
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                                    lineNumber: 476,
+                                                                    columnNumber: 38
+                                                                }, this) : null
+                                                            ]
+                                                        }, void 0, true)
+                                                    }, `wbcc-${k}`, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 460,
+                                                        columnNumber: 23
+                                                    }, this);
+                                                })
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 443,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                            lineNumber: 442,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                    lineNumber: 434,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                lineNumber: 433,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                        lineNumber: 429,
+                        columnNumber: 9
+                    }, this),
+                    hasBacSummary && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
+                        className: "overflow-hidden",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                className: "p-4 pb-3",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                    className: "text-sm",
+                                    children: "BAC Summary"
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                    lineNumber: 492,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                lineNumber: 491,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
+                                className: "p-0",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Table"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHeader"], {
+                                            className: "bg-zinc-50 dark:bg-zinc-950",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                className: "hover:bg-transparent",
+                                                children: bacKeys.map((k)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        children: k === "Main" ? "BAC Main" : `Part ${k}`
+                                                    }, `bach-${k}`, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 499,
+                                                        columnNumber: 21
+                                                    }, this))
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 497,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                            lineNumber: 496,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableBody"], {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                children: bacKeys.map((k)=>{
+                                                    const obx = bacParts[k];
+                                                    const value = obx?.value ?? "—";
+                                                    const units = obx?.units?.id || obx?.units?.text || "";
+                                                    const strVal = String(value);
+                                                    const hasBase64 = strVal.includes("Base64^");
+                                                    let attachment = null;
+                                                    if (hasBase64) {
+                                                        const base64 = strVal.split("Base64^").pop()?.trim() || "";
+                                                        const mime = base64.startsWith("JVBERi0") || strVal.toLowerCase().includes("pdf") ? "application/pdf" : "image/jpeg";
+                                                        const uri = `data:${mime};base64,${base64}`;
+                                                        attachment = mime === "application/pdf" ? {
+                                                            kind: "pdf",
+                                                            src: uri
+                                                        } : {
+                                                            kind: "image",
+                                                            src: uri
+                                                        };
+                                                    }
+                                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                        children: attachment ? attachment.kind === "image" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                            href: attachment.src,
+                                                            target: "_blank",
+                                                            rel: "noreferrer",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                                src: attachment.src,
+                                                                alt: obx?.id?.text || obx?.id?.id || `BAC ${k}`,
+                                                                className: "h-16 w-16 rounded object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                                lineNumber: 525,
+                                                                columnNumber: 31
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 524,
+                                                            columnNumber: 29
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                            href: attachment.src,
+                                                            target: "_blank",
+                                                            rel: "noreferrer",
+                                                            className: "underline underline-offset-2",
+                                                            children: "Open PDF"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 532,
+                                                            columnNumber: 29
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                            children: [
+                                                                value,
+                                                                units ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "ml-1 text-xs text-zinc-500",
+                                                                    children: units
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                                    lineNumber: 537,
+                                                                    columnNumber: 38
+                                                                }, this) : null
+                                                            ]
+                                                        }, void 0, true)
+                                                    }, `bacc-${k}`, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 521,
+                                                        columnNumber: 23
+                                                    }, this);
+                                                })
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 504,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                            lineNumber: 503,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                    lineNumber: 495,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                lineNumber: 494,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                        lineNumber: 490,
+                        columnNumber: 9
+                    }, this),
+                    hasFatSummary && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
+                        className: "overflow-hidden",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                className: "p-4 pb-3",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                    className: "text-sm",
+                                    children: "FAT Summary"
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                    lineNumber: 553,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                lineNumber: 552,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
+                                className: "p-0",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Table"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHeader"], {
+                                            className: "bg-zinc-50 dark:bg-zinc-950",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                className: "hover:bg-transparent",
+                                                children: fatKeys.map((k)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        children: k === "Main" ? "FAT Main" : `Part ${k}`
+                                                    }, `fath-${k}`, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 560,
+                                                        columnNumber: 21
+                                                    }, this))
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 558,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                            lineNumber: 557,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableBody"], {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                children: fatKeys.map((k)=>{
+                                                    const obx = fatParts[k];
+                                                    const value = obx?.value ?? "—";
+                                                    const units = obx?.units?.id || obx?.units?.text || "";
+                                                    const strVal = String(value);
+                                                    const hasBase64 = strVal.includes("Base64^");
+                                                    let attachment = null;
+                                                    if (hasBase64) {
+                                                        const base64 = strVal.split("Base64^").pop()?.trim() || "";
+                                                        const mime = base64.startsWith("JVBERi0") || strVal.toLowerCase().includes("pdf") ? "application/pdf" : "image/jpeg";
+                                                        const uri = `data:${mime};base64,${base64}`;
+                                                        attachment = mime === "application/pdf" ? {
+                                                            kind: "pdf",
+                                                            src: uri
+                                                        } : {
+                                                            kind: "image",
+                                                            src: uri
+                                                        };
+                                                    }
+                                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                        children: attachment ? attachment.kind === "image" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                            href: attachment.src,
+                                                            target: "_blank",
+                                                            rel: "noreferrer",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                                src: attachment.src,
+                                                                alt: obx?.id?.text || obx?.id?.id || `FAT ${k}`,
+                                                                className: "h-16 w-16 rounded object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                                lineNumber: 586,
+                                                                columnNumber: 31
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 585,
+                                                            columnNumber: 29
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                            href: attachment.src,
+                                                            target: "_blank",
+                                                            rel: "noreferrer",
+                                                            className: "underline underline-offset-2",
+                                                            children: "Open PDF"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 593,
+                                                            columnNumber: 29
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                            children: [
+                                                                value,
+                                                                units ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "ml-1 text-xs text-zinc-500",
+                                                                    children: units
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                                    lineNumber: 598,
+                                                                    columnNumber: 38
+                                                                }, this) : null
+                                                            ]
+                                                        }, void 0, true)
+                                                    }, `fatc-${k}`, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 582,
+                                                        columnNumber: 23
+                                                    }, this);
+                                                })
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 565,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                            lineNumber: 564,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                    lineNumber: 556,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                lineNumber: 555,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                        lineNumber: 551,
+                        columnNumber: 9
+                    }, this),
+                    hasCodSummary && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
+                        className: "overflow-hidden",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                className: "p-4 pb-3",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                    className: "text-sm",
+                                    children: "COD Summary"
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                    lineNumber: 613,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                lineNumber: 612,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
+                                className: "p-0",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Table"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHeader"], {
+                                            className: "bg-zinc-50 dark:bg-zinc-950",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                className: "hover:bg-transparent",
+                                                children: codKeys.map((k)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        children: k === "Main" ? "COD Main" : `Part ${k}`
+                                                    }, `ch-${k}`, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 620,
+                                                        columnNumber: 21
+                                                    }, this))
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 618,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                            lineNumber: 617,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableBody"], {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                children: codKeys.map((k)=>{
+                                                    const obx = codParts[k];
+                                                    const value = obx?.value ?? "—";
+                                                    const units = obx?.units?.id || obx?.units?.text || "";
+                                                    const strVal = String(value);
+                                                    const hasBase64 = strVal.includes("Base64^");
+                                                    let attachment = null;
+                                                    if (hasBase64) {
+                                                        const base64 = strVal.split("Base64^").pop()?.trim() || "";
+                                                        const mime = base64.startsWith("JVBERi0") || strVal.toLowerCase().includes("pdf") ? "application/pdf" : "image/jpeg";
+                                                        const uri = `data:${mime};base64,${base64}`;
+                                                        attachment = mime === "application/pdf" ? {
+                                                            kind: "pdf",
+                                                            src: uri
+                                                        } : {
+                                                            kind: "image",
+                                                            src: uri
+                                                        };
+                                                    }
+                                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                        children: attachment ? attachment.kind === "image" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                            href: attachment.src,
+                                                            target: "_blank",
+                                                            rel: "noreferrer",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                                src: attachment.src,
+                                                                alt: obx?.id?.text || obx?.id?.id || `COD ${k}`,
+                                                                className: "h-16 w-16 rounded object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                                lineNumber: 646,
+                                                                columnNumber: 31
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 645,
+                                                            columnNumber: 29
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                            href: attachment.src,
+                                                            target: "_blank",
+                                                            rel: "noreferrer",
+                                                            className: "underline underline-offset-2",
+                                                            children: "Open PDF"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 653,
+                                                            columnNumber: 29
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                            children: [
+                                                                value,
+                                                                units ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "ml-1 text-xs text-zinc-500",
+                                                                    children: units
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                                    lineNumber: 658,
+                                                                    columnNumber: 38
+                                                                }, this) : null
+                                                            ]
+                                                        }, void 0, true)
+                                                    }, `cc-${k}`, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 642,
+                                                        columnNumber: 23
+                                                    }, this);
+                                                })
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 625,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                            lineNumber: 624,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                    lineNumber: 616,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                lineNumber: 615,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                        lineNumber: 611,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
+                        className: "overflow-hidden",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                className: "p-4 pb-3",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                    className: "text-sm",
+                                    children: "Observations"
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                    lineNumber: 673,
+                                    columnNumber: 11
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                lineNumber: 672,
+                                columnNumber: 9
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
+                                className: "p-0",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Table"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHeader"], {
+                                            className: "bg-zinc-50 dark:bg-zinc-950",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                className: "hover:bg-transparent",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        children: "Code"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 679,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        children: "Name"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 680,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        children: "Value"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 681,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        children: "Units"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 682,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        children: "Ref Range"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 683,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        children: "Flag"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 684,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        children: "Status"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                        lineNumber: 685,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 678,
+                                                columnNumber: 15
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                            lineNumber: 677,
+                                            columnNumber: 13
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableBody"], {
+                                            children: (hasMapSummary || hasCodSummary || hasRbcSummary || hasWbcSummary || hasFatSummary || hasBacSummary ? otherObservations : observations).length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                    colSpan: 7,
+                                                    className: "text-center text-zinc-500",
+                                                    children: "No observations"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                    lineNumber: 691,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                lineNumber: 690,
+                                                columnNumber: 17
+                                            }, this) : (hasMapSummary || hasCodSummary || hasRbcSummary || hasWbcSummary || hasFatSummary || hasBacSummary ? otherObservations : observations).map((obx, i)=>{
+                                                const code = obx?.id?.id || "";
+                                                const name = obx?.id?.text || "";
+                                                const value = obx?.value ?? "";
+                                                const units = obx?.units?.id || obx?.units?.text || "";
+                                                const ref = obx?.ref_range || "";
+                                                const flag = obx?.abnormal_flags || "";
+                                                const status = obx?.status || "";
+                                                const isAbn = flag && flag !== "N";
+                                                const strVal = String(value);
+                                                const hasBase64 = strVal.includes("Base64^");
+                                                let attachment = null;
+                                                if (hasBase64) {
+                                                    const base64 = strVal.split("Base64^").pop()?.trim() || "";
+                                                    const mime = base64.startsWith("JVBERi0") || strVal.toLowerCase().includes("pdf") ? "application/pdf" : "image/jpeg";
+                                                    const uri = `data:${mime};base64,${base64}`;
+                                                    attachment = mime === "application/pdf" ? {
+                                                        kind: "pdf",
+                                                        src: uri
+                                                    } : {
+                                                        kind: "image",
+                                                        src: uri
+                                                    };
+                                                }
+                                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                            className: "font-medium",
+                                                            children: code
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 716,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                            children: name
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 717,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                            className: isAbn ? "text-rose-600" : undefined,
+                                                            children: attachment ? attachment.kind === "image" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                href: attachment.src,
+                                                                target: "_blank",
+                                                                rel: "noreferrer",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                                    src: attachment.src,
+                                                                    alt: name || code || "attachment",
+                                                                    className: "h-16 w-16 rounded object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                                    lineNumber: 722,
+                                                                    columnNumber: 31
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                                lineNumber: 721,
+                                                                columnNumber: 29
+                                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                href: attachment.src,
+                                                                target: "_blank",
+                                                                rel: "noreferrer",
+                                                                className: "underline underline-offset-2",
+                                                                children: "Open PDF"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                                lineNumber: 725,
+                                                                columnNumber: 29
+                                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                                children: value
+                                                            }, void 0, false)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 718,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                            children: units
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 731,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                            className: "text-zinc-500",
+                                                            children: ref
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 732,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                            children: flag ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: isAbn ? "rounded-full bg-rose-100 px-2 py-0.5 text-xs text-rose-700 dark:bg-rose-900/30 dark:text-rose-300" : "rounded-full bg-zinc-100 px-2 py-0.5 text-xs text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300",
+                                                                children: flag
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                                lineNumber: 735,
+                                                                columnNumber: 27
+                                                            }, this) : "—"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 733,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                            className: "text-zinc-500",
+                                                            children: status
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                            lineNumber: 742,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    ]
+                                                }, `${code}-${i}`, true, {
+                                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                                    lineNumber: 715,
+                                                    columnNumber: 21
+                                                }, this);
+                                            })
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                            lineNumber: 688,
+                                            columnNumber: 13
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                    lineNumber: 676,
+                                    columnNumber: 11
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                                lineNumber: 675,
+                                columnNumber: 9
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                        lineNumber: 671,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "rounded-xl border border-zinc-200 bg-white p-3 text-xs text-zinc-600 dark:border-zinc-800 dark:bg-white",
+                        children: [
+                            "Generated by LIS • ",
+                            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Boom$2f$LIS$2d$Project$2f$LIS$2d$Frontend$2f$node_modules$2f$moment$2f$moment$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])().format("DD MMMM YYYY")
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
+                        lineNumber: 752,
+                        columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-                lineNumber: 171,
+                lineNumber: 266,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/Boom/LIS-Project/LIS-Frontend/app/dashboard/reports/[id]/page.tsx",
-        lineNumber: 130,
+        lineNumber: 248,
         columnNumber: 5
     }, this);
 }

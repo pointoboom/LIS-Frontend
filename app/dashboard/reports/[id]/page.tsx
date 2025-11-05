@@ -124,6 +124,119 @@ export default function ReportPage() {
   const patient = report?.pid ?? {};
   const order = report?.orders?.[0]?.obr ?? {};
   const observations = report?.orders?.[0]?.observations ?? [];
+  // Derive MAP summary (MAP_Main and MAP Part 1..10) displayed as a single row
+  const mapKeys = ["Main", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"] as const;
+  type MapKey = typeof mapKeys[number];
+  const mapParts: Partial<Record<MapKey, (typeof observations)[number]>> = {};
+  // Derive COD summary (COD_Main and COD Part 1..10) displayed as a single row
+  const codKeys = ["Main", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"] as const;
+  type CodKey = typeof codKeys[number];
+  const codParts: Partial<Record<CodKey, (typeof observations)[number]>> = {};
+  // Derive FAT summary (FAT_Main and FAT Part 1..10) displayed as a single row
+  const fatKeys = ["Main", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"] as const;
+  type FatKey = typeof fatKeys[number];
+  const fatParts: Partial<Record<FatKey, (typeof observations)[number]>> = {};
+  // Derive BAC summary (BAC_Main and BAC Part 1..10) displayed as a single row
+  const bacKeys = ["Main", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"] as const;
+  type BacKey = typeof bacKeys[number];
+  const bacParts: Partial<Record<BacKey, (typeof observations)[number]>> = {};
+  // Derive RBC summary (RBC_Main and RBC Part 1..10) displayed as a single row
+  const rbcKeys = ["Main", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"] as const;
+  type RbcKey = typeof rbcKeys[number];
+  const rbcParts: Partial<Record<RbcKey, (typeof observations)[number]>> = {};
+  // Derive WBC summary (WBC_Main and WBC Part 1..10) displayed as a single row
+  const wbcKeys = ["Main", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"] as const;
+  type WbcKey = typeof wbcKeys[number];
+  const wbcParts: Partial<Record<WbcKey, (typeof observations)[number]>> = {};
+  const otherObservations: typeof observations = [];
+  for (const obx of observations) {
+    const raw = (obx?.id?.text || obx?.id?.id || "").toUpperCase();
+    if (raw.includes("MAP")) {
+      if (raw.includes("MAIN")) {
+        if (!mapParts.Main) mapParts.Main = obx;
+        continue;
+      }
+      const m = raw.match(/PART[^0-9]*([0-9]{1,2})/i);
+      const n = m ? parseInt(m[1], 10) : NaN;
+      if (Number.isFinite(n) && n >= 1 && n <= 10) {
+        const key = String(n) as MapKey;
+        if (!mapParts[key]) mapParts[key] = obx;
+        continue;
+      }
+    }
+    if (raw.includes("COD")) {
+      if (raw.includes("MAIN")) {
+        if (!codParts.Main) codParts.Main = obx;
+        continue;
+      }
+      const m2 = raw.match(/PART[^0-9]*([0-9]{1,2})/i);
+      const n2 = m2 ? parseInt(m2[1], 10) : NaN;
+      if (Number.isFinite(n2) && n2 >= 1 && n2 <= 10) {
+        const key2 = String(n2) as CodKey;
+        if (!codParts[key2]) codParts[key2] = obx;
+        continue;
+      }
+    }
+    if (raw.includes("RBC")) {
+      if (raw.includes("MAIN")) {
+        if (!rbcParts.Main) rbcParts.Main = obx;
+        continue;
+      }
+      const mr = raw.match(/PART[^0-9]*([0-9]{1,2})/i);
+      const nr = mr ? parseInt(mr[1], 10) : NaN;
+      if (Number.isFinite(nr) && nr >= 1 && nr <= 10) {
+        const keyr = String(nr) as RbcKey;
+        if (!rbcParts[keyr]) rbcParts[keyr] = obx;
+        continue;
+      }
+    }
+    if (raw.includes("WBC")) {
+      if (raw.includes("MAIN")) {
+        if (!wbcParts.Main) wbcParts.Main = obx;
+        continue;
+      }
+      const mw = raw.match(/PART[^0-9]*([0-9]{1,2})/i);
+      const nw = mw ? parseInt(mw[1], 10) : NaN;
+      if (Number.isFinite(nw) && nw >= 1 && nw <= 10) {
+        const keyw = String(nw) as WbcKey;
+        if (!wbcParts[keyw]) wbcParts[keyw] = obx;
+        continue;
+      }
+    }
+    if (raw.includes("FAT")) {
+      if (raw.includes("MAIN")) {
+        if (!fatParts.Main) fatParts.Main = obx;
+        continue;
+      }
+      const mf = raw.match(/PART[^0-9]*([0-9]{1,2})/i);
+      const nf = mf ? parseInt(mf[1], 10) : NaN;
+      if (Number.isFinite(nf) && nf >= 1 && nf <= 10) {
+        const keyf = String(nf) as FatKey;
+        if (!fatParts[keyf]) fatParts[keyf] = obx;
+        continue;
+      }
+    }
+    if (raw.includes("BAC")) {
+      if (raw.includes("MAIN")) {
+        if (!bacParts.Main) bacParts.Main = obx;
+        continue;
+      }
+      const mb = raw.match(/PART[^0-9]*([0-9]{1,2})/i);
+      const nb = mb ? parseInt(mb[1], 10) : NaN;
+      if (Number.isFinite(nb) && nb >= 1 && nb <= 10) {
+        const keyb = String(nb) as BacKey;
+        if (!bacParts[keyb]) bacParts[keyb] = obx;
+        continue;
+      }
+    }
+    otherObservations.push(obx);
+  }
+  const hasMapSummary = Object.keys(mapParts).length > 0;
+  const hasCodSummary = Object.keys(codParts).length > 0;
+  const hasRbcSummary = Object.keys(rbcParts).length > 0;
+  const hasWbcSummary = Object.keys(wbcParts).length > 0;
+  const hasFatSummary = Object.keys(fatParts).length > 0;
+  const hasBacSummary = Object.keys(bacParts).length > 0;
   const receivedAt = (() => {
     const receivedRaw = report?.received_at as any;
     if (typeof receivedRaw === "string") return moment(receivedRaw).format("DD MMMM YYYY");
@@ -134,15 +247,15 @@ export default function ReportPage() {
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
-        <div className="text-sm text-zinc-500">
+        {/* <div className="text-sm text-zinc-500">
           <Link href="/dashboard" className="underline underline-offset-2">Dashboard</Link>
           <span className="mx-2">/</span>
           <span>Report</span>
-        </div>
+        </div> */}
         <div className="flex items-center gap-2 print:hidden">
-          <ExportJpgButton targetId="report-export" filename={`report-${id}.jpg`} />
+          {/* <ExportJpgButton targetId="report-export" filename={`report-${id}.jpg`} />
           <ExportPngButton targetId="report-export" filename={`report-${id}.png`} />
-          <ExportPdfButton targetId="report-export" filename={`report-${id}.pdf`} />
+          <ExportPdfButton targetId="report-export" filename={`report-${id}.pdf`} /> */}
           <PrintButton />
           <Link href="/dashboard" passHref>
             <Button variant="outline" size="sm">Back</Button>
@@ -190,6 +303,371 @@ export default function ReportPage() {
         </CardContent>
       </Card>
 
+      {hasMapSummary && (
+        <Card className="overflow-hidden">
+          <CardHeader className="p-4 pb-3">
+          <CardTitle className="text-sm">MAP Summary</CardTitle>
+          </CardHeader>
+          <CardContent className="p-0">
+            <Table>
+              <TableHeader className="bg-zinc-50 dark:bg-zinc-950">
+                <TableRow className="hover:bg-transparent">
+                  {mapKeys.map((k) => (
+                    <TableHead key={`h-${k}`}>{k === "Main" ? "MAP Main" : `Part ${k}`}</TableHead>
+                  ))}
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  {mapKeys.map((k) => {
+                    const obx = mapParts[k];
+                    const value = obx?.value ?? "—";
+                    const units = obx?.units?.id || obx?.units?.text || "";
+                    const strVal = String(value);
+                    const hasBase64 = strVal.includes("Base64^");
+                    let attachment: { kind: "image" | "pdf"; src: string } | null = null;
+                    if (hasBase64) {
+                      const base64 = strVal.split("Base64^").pop()?.trim() || "";
+                      const mime = base64.startsWith("JVBERi0") || strVal.toLowerCase().includes("pdf")
+                        ? "application/pdf"
+                        : "image/jpeg";
+                      const uri = `data:${mime};base64,${base64}`;
+                      attachment = mime === "application/pdf" ? { kind: "pdf", src: uri } : { kind: "image", src: uri };
+                    }
+                    return (
+                      <TableCell key={`c-${k}`}>
+                        {attachment ? (
+                          attachment.kind === "image" ? (
+                            <a href={attachment.src} target="_blank" rel="noreferrer">
+                              <img
+                                src={attachment.src}
+                                alt={(obx?.id?.text || obx?.id?.id || `MAP ${k}`) as string}
+                                className="h-20 w-20 rounded object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                              />
+                            </a>
+                          ) : (
+                            <a href={attachment.src} target="_blank" rel="noreferrer" className="underline underline-offset-2">Open PDF</a>
+                          )
+                        ) : (
+                          <>
+                            {value}
+                            {units ? <span className="ml-1 text-xs text-zinc-500">{units}</span> : null}
+                          </>
+                        )}
+                      </TableCell>
+                    );
+                  })}
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+      )}
+
+      {hasRbcSummary && (
+        <Card className="overflow-hidden">
+          <CardHeader className="p-4 pb-3">
+            <CardTitle className="text-sm">RBC Summary</CardTitle>
+          </CardHeader>
+          <CardContent className="p-0">
+            <Table>
+              <TableHeader className="bg-zinc-50 dark:bg-zinc-950">
+                <TableRow className="hover:bg-transparent">
+                  {rbcKeys.map((k) => (
+                    <TableHead key={`rbch-${k}`}>{k === "Main" ? "RBC Main" : `Part ${k}`}</TableHead>
+                  ))}
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  {rbcKeys.map((k) => {
+                    const obx = rbcParts[k];
+                    const value = obx?.value ?? "—";
+                    const units = obx?.units?.id || obx?.units?.text || "";
+                    const strVal = String(value);
+                    const hasBase64 = strVal.includes("Base64^");
+                    let attachment: { kind: "image" | "pdf"; src: string } | null = null;
+                    if (hasBase64) {
+                      const base64 = strVal.split("Base64^").pop()?.trim() || "";
+                      const mime = base64.startsWith("JVBERi0") || strVal.toLowerCase().includes("pdf")
+                        ? "application/pdf"
+                        : "image/jpeg";
+                      const uri = `data:${mime};base64,${base64}`;
+                      attachment = mime === "application/pdf" ? { kind: "pdf", src: uri } : { kind: "image", src: uri };
+                    }
+                    return (
+                      <TableCell key={`rbcc-${k}`}>
+                        {attachment ? (
+                          attachment.kind === "image" ? (
+                            <a href={attachment.src} target="_blank" rel="noreferrer">
+                              <img
+                                src={attachment.src}
+                                alt={(obx?.id?.text || obx?.id?.id || `RBC ${k}`) as string}
+                                className="h-16 w-16 rounded object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                              />
+                            </a>
+                          ) : (
+                            <a href={attachment.src} target="_blank" rel="noreferrer" className="underline underline-offset-2">Open PDF</a>
+                          )
+                        ) : (
+                          <>
+                            {value}
+                            {units ? <span className="ml-1 text-xs text-zinc-500">{units}</span> : null}
+                          </>
+                        )}
+                      </TableCell>
+                    );
+                  })}
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+      )}
+
+      {hasWbcSummary && (
+        <Card className="overflow-hidden">
+          <CardHeader className="p-4 pb-3">
+            <CardTitle className="text-sm">WBC Summary</CardTitle>
+          </CardHeader>
+          <CardContent className="p-0">
+            <Table>
+              <TableHeader className="bg-zinc-50 dark:bg-zinc-950">
+                <TableRow className="hover:bg-transparent">
+                  {wbcKeys.map((k) => (
+                    <TableHead key={`wbch-${k}`}>{k === "Main" ? "WBC Main" : `Part ${k}`}</TableHead>
+                  ))}
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  {wbcKeys.map((k) => {
+                    const obx = wbcParts[k];
+                    const value = obx?.value ?? "—";
+                    const units = obx?.units?.id || obx?.units?.text || "";
+                    const strVal = String(value);
+                    const hasBase64 = strVal.includes("Base64^");
+                    let attachment: { kind: "image" | "pdf"; src: string } | null = null;
+                    if (hasBase64) {
+                      const base64 = strVal.split("Base64^").pop()?.trim() || "";
+                      const mime = base64.startsWith("JVBERi0") || strVal.toLowerCase().includes("pdf")
+                        ? "application/pdf"
+                        : "image/jpeg";
+                      const uri = `data:${mime};base64,${base64}`;
+                      attachment = mime === "application/pdf" ? { kind: "pdf", src: uri } : { kind: "image", src: uri };
+                    }
+                    return (
+                      <TableCell key={`wbcc-${k}`}>
+                        {attachment ? (
+                          attachment.kind === "image" ? (
+                            <a href={attachment.src} target="_blank" rel="noreferrer">
+                              <img
+                                src={attachment.src}
+                                alt={(obx?.id?.text || obx?.id?.id || `WBC ${k}`) as string}
+                                className="h-16 w-16 rounded object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                              />
+                            </a>
+                          ) : (
+                            <a href={attachment.src} target="_blank" rel="noreferrer" className="underline underline-offset-2">Open PDF</a>
+                          )
+                        ) : (
+                          <>
+                            {value}
+                            {units ? <span className="ml-1 text-xs text-zinc-500">{units}</span> : null}
+                          </>
+                        )}
+                      </TableCell>
+                    );
+                  })}
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+      )}
+
+      {hasBacSummary && (
+        <Card className="overflow-hidden">
+          <CardHeader className="p-4 pb-3">
+            <CardTitle className="text-sm">BAC Summary</CardTitle>
+          </CardHeader>
+          <CardContent className="p-0">
+            <Table>
+              <TableHeader className="bg-zinc-50 dark:bg-zinc-950">
+                <TableRow className="hover:bg-transparent">
+                  {bacKeys.map((k) => (
+                    <TableHead key={`bach-${k}`}>{k === "Main" ? "BAC Main" : `Part ${k}`}</TableHead>
+                  ))}
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  {bacKeys.map((k) => {
+                    const obx = bacParts[k];
+                    const value = obx?.value ?? "—";
+                    const units = obx?.units?.id || obx?.units?.text || "";
+                    const strVal = String(value);
+                    const hasBase64 = strVal.includes("Base64^");
+                    let attachment: { kind: "image" | "pdf"; src: string } | null = null;
+                    if (hasBase64) {
+                      const base64 = strVal.split("Base64^").pop()?.trim() || "";
+                      const mime = base64.startsWith("JVBERi0") || strVal.toLowerCase().includes("pdf")
+                        ? "application/pdf"
+                        : "image/jpeg";
+                      const uri = `data:${mime};base64,${base64}`;
+                      attachment = mime === "application/pdf" ? { kind: "pdf", src: uri } : { kind: "image", src: uri };
+                    }
+                    return (
+                      <TableCell key={`bacc-${k}`}>
+                        {attachment ? (
+                          attachment.kind === "image" ? (
+                            <a href={attachment.src} target="_blank" rel="noreferrer">
+                              <img
+                                src={attachment.src}
+                                alt={(obx?.id?.text || obx?.id?.id || `BAC ${k}`) as string}
+                                className="h-16 w-16 rounded object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                              />
+                            </a>
+                          ) : (
+                            <a href={attachment.src} target="_blank" rel="noreferrer" className="underline underline-offset-2">Open PDF</a>
+                          )
+                        ) : (
+                          <>
+                            {value}
+                            {units ? <span className="ml-1 text-xs text-zinc-500">{units}</span> : null}
+                          </>
+                        )}
+                      </TableCell>
+                    );
+                  })}
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+      )}
+
+      {hasFatSummary && (
+        <Card className="overflow-hidden">
+          <CardHeader className="p-4 pb-3">
+            <CardTitle className="text-sm">FAT Summary</CardTitle>
+          </CardHeader>
+          <CardContent className="p-0">
+            <Table>
+              <TableHeader className="bg-zinc-50 dark:bg-zinc-950">
+                <TableRow className="hover:bg-transparent">
+                  {fatKeys.map((k) => (
+                    <TableHead key={`fath-${k}`}>{k === "Main" ? "FAT Main" : `Part ${k}`}</TableHead>
+                  ))}
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  {fatKeys.map((k) => {
+                    const obx = fatParts[k];
+                    const value = obx?.value ?? "—";
+                    const units = obx?.units?.id || obx?.units?.text || "";
+                    const strVal = String(value);
+                    const hasBase64 = strVal.includes("Base64^");
+                    let attachment: { kind: "image" | "pdf"; src: string } | null = null;
+                    if (hasBase64) {
+                      const base64 = strVal.split("Base64^").pop()?.trim() || "";
+                      const mime = base64.startsWith("JVBERi0") || strVal.toLowerCase().includes("pdf")
+                        ? "application/pdf"
+                        : "image/jpeg";
+                      const uri = `data:${mime};base64,${base64}`;
+                      attachment = mime === "application/pdf" ? { kind: "pdf", src: uri } : { kind: "image", src: uri };
+                    }
+                    return (
+                      <TableCell key={`fatc-${k}`}>
+                        {attachment ? (
+                          attachment.kind === "image" ? (
+                            <a href={attachment.src} target="_blank" rel="noreferrer">
+                              <img
+                                src={attachment.src}
+                                alt={(obx?.id?.text || obx?.id?.id || `FAT ${k}`) as string}
+                                className="h-16 w-16 rounded object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                              />
+                            </a>
+                          ) : (
+                            <a href={attachment.src} target="_blank" rel="noreferrer" className="underline underline-offset-2">Open PDF</a>
+                          )
+                        ) : (
+                          <>
+                            {value}
+                            {units ? <span className="ml-1 text-xs text-zinc-500">{units}</span> : null}
+                          </>
+                        )}
+                      </TableCell>
+                    );
+                  })}
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+      )}
+      {hasCodSummary && (
+        <Card className="overflow-hidden">
+          <CardHeader className="p-4 pb-3">
+            <CardTitle className="text-sm">COD Summary</CardTitle>
+          </CardHeader>
+          <CardContent className="p-0">
+            <Table>
+              <TableHeader className="bg-zinc-50 dark:bg-zinc-950">
+                <TableRow className="hover:bg-transparent">
+                  {codKeys.map((k) => (
+                    <TableHead key={`ch-${k}`}>{k === "Main" ? "COD Main" : `Part ${k}`}</TableHead>
+                  ))}
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  {codKeys.map((k) => {
+                    const obx = codParts[k];
+                    const value = obx?.value ?? "—";
+                    const units = obx?.units?.id || obx?.units?.text || "";
+                    const strVal = String(value);
+                    const hasBase64 = strVal.includes("Base64^");
+                    let attachment: { kind: "image" | "pdf"; src: string } | null = null;
+                    if (hasBase64) {
+                      const base64 = strVal.split("Base64^").pop()?.trim() || "";
+                      const mime = base64.startsWith("JVBERi0") || strVal.toLowerCase().includes("pdf")
+                        ? "application/pdf"
+                        : "image/jpeg";
+                      const uri = `data:${mime};base64,${base64}`;
+                      attachment = mime === "application/pdf" ? { kind: "pdf", src: uri } : { kind: "image", src: uri };
+                    }
+                    return (
+                      <TableCell key={`cc-${k}`}>
+                        {attachment ? (
+                          attachment.kind === "image" ? (
+                            <a href={attachment.src} target="_blank" rel="noreferrer">
+                              <img
+                                src={attachment.src}
+                                alt={(obx?.id?.text || obx?.id?.id || `COD ${k}`) as string}
+                                className="h-16 w-16 rounded object-cover ring-1 ring-zinc-200 dark:ring-zinc-800"
+                              />
+                            </a>
+                          ) : (
+                            <a href={attachment.src} target="_blank" rel="noreferrer" className="underline underline-offset-2">Open PDF</a>
+                          )
+                        ) : (
+                          <>
+                            {value}
+                            {units ? <span className="ml-1 text-xs text-zinc-500">{units}</span> : null}
+                          </>
+                        )}
+                      </TableCell>
+                    );
+                  })}
+                </TableRow>
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+      )}
+
       <Card className="overflow-hidden">
         <CardHeader className="p-4 pb-3">
           <CardTitle className="text-sm">Observations</CardTitle>
@@ -208,12 +686,12 @@ export default function ReportPage() {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {observations.length === 0 ? (
+              {(hasMapSummary || hasCodSummary || hasRbcSummary || hasWbcSummary || hasFatSummary || hasBacSummary ? otherObservations : observations).length === 0 ? (
                 <TableRow>
                   <TableCell colSpan={7} className="text-center text-zinc-500">No observations</TableCell>
                 </TableRow>
               ) : (
-                observations.map((obx, i) => {
+                (hasMapSummary || hasCodSummary || hasRbcSummary || hasWbcSummary || hasFatSummary || hasBacSummary ? otherObservations : observations).map((obx, i) => {
                   const code = obx?.id?.id || "";
                   const name = obx?.id?.text || "";
                   const value = obx?.value ?? "";
